@@ -1,0 +1,8 @@
+Change list:
+
+1. Add curl(v7.21.0) source code and this README file
+2. Add lib/curl_config.h, src/curl_config.h and include/curl/curlbuild.h files
+    #./configure --disable-debug --disable-curldebug --disable-ares --disable-ldap --disable-ldaps --disable-sspi \
+                 --without-krb4 --without-spnego --without-gssapi --without-nss --without-libssh2 --without-librtmp
+3. Modify lib/curl_config.h and src/curl_config.h manually, disabling some labels
+4. Modify curl's original Android.mk file to build libcurl and curl program
