@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:repository
+    xmlns:ns2="http://schemas.android.com/repository/android/common/01"
+    xmlns:ns3="http://schemas.android.com/repository/android/generic/01"
+    xmlns:ns4="http://schemas.android.com/sdk/android/repo/addon2/01"
+    xmlns:ns5="http://schemas.android.com/sdk/android/repo/repository2/01"
+    xmlns:ns6="http://schemas.android.com/sdk/android/repo/sys-img2/01">
+    <license id="liantong-sdk-license" type="text">add Liantong SDK License here....</license>
+    <localPackage path="add-ons;liantong-sdk-addon-22" obsolete="false">
+        <type-details
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:addonDetailsType">
+            <api-level>22</api-level>
+            <codename></codename>
+            <vendor>
+                <id>liantong</id>
+                <display>China-Liantong Inc.</display>
+            </vendor>
+            <tag>
+                <id>liantong_stb_apis</id>
+                <display>liantong STB APIs</display>
+            </tag>
+            <libraries>
+                <library localJarPath="stbApi.jar" name="framework">
+                    <description>storage utils libraryraries</description>
+                </library>
+                <library localJarPath="SecurityGuardManager.jar" name="SecurityGuardManager">
+                    <description>securityguard libraryraries</description>
+                </library>
+                <library localJarPath="lt_system.jar" name="lt_system">
+                    <description>lt system sdk</description>
+                </library>
+                <library localJarPath="dvbSdkCore.jar" name="dvbSdkCore">
+                    <description>dvb core sdk</description>
+                </library>
+                <library localJarPath="casdk.jar" name="casdk">
+                    <description>ca libraryraries</description>
+                </library>
+                <library localJarPath="sdk_ltmedia.jar" name="sdk_ltmedia">
+                    <description>ltmedia sdk</description>
+                </library>
+            </libraries>
+        </type-details>
+        <revision>
+            <major>38</major>
+        </revision>
+        <display-name>liantong STB APIs</display-name>
+        <uses-license ref="liantong-sdk-license"/>
+    </localPackage>
+</ns2:repository>
